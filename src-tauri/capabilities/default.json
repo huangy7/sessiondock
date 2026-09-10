@@ -1,0 +1,16 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the main window",
+  "windows": ["main", "token-login", "token-tray-popover"],
+  "permissions": [
+    "core:default",
+    "opener:default",
+    "dialog:default",
+    "updater:default",
+    "fs:default",
+    "fs:allow-write-file",
+    "notification:default",
+    "clipboard-manager:allow-read-text"
+  ]
+}

@@ -1,0 +1,71 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+*.local
+stable.json
+manifest.json
+latest.json
+stable-v2.json
+release-artifacts/
+artifacts/
+
+# Rust / Tauri
+target
+src-tauri/target
+src-tauri/gen
+src-tauri/binaries
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+.superpowers/
+.agents/
+.agent/
+docs/superpowers/
+
+# 工具分析缓存
+graphify-out/
+
+# 根目录临时草稿与调试脚本
+/plan.md
+/test_db.rs
+/token-dashboard-preview.html
+
+# TypeScript 构建缓存
+*.tsbuildinfo
+
+# Tauri Updater Keys
+updater-signing.key
+updater-signing.key.pub
+
+latest.json
+stable-v2.json
+
+# WorkBuddy 应用在本仓库运行时生成的数据目录
+.workbuddy/
+
+# 独立部署的官网 Landing Page 仓库
+/website/

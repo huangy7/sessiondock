@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "name": "Clawd",
+  "author": "rullerzhou",
+  "license": "AGPL-3.0-only",
+  "source": "https://github.com/rullerzhou-afk/clawd-on-desk",
+  "states": {
+    "idle": [
+      "clawd-idle-follow.svg"
+    ],
+    "dizzy": [
+      "clawd-dizzy.svg"
+    ],
+    "working": [
+      "clawd-working-typing.svg"
+    ],
+    "attention": [
+      "clawd-happy.svg"
+    ],
+    "happy": [
+      "clawd-react-double-jump.svg"
+    ]
+  },
+  "reactions": {
+    "drag": {
+      "file": "clawd-react-drag.svg"
+    },
+    "clickLeft": {
+      "file": "clawd-react-left.svg",
+      "duration": 2500
+    },
+    "clickRight": {
+      "file": "clawd-react-right.svg",
+      "duration": 2500
+    },
+    "annoyed": {
+      "file": "clawd-react-annoyed.svg",
+      "duration": 3500
+    },
+    "double": {
+      "files": [
+        "clawd-react-double.svg",
+        "clawd-react-double-jump.svg"
+      ],
+      "duration": 3500
+    }
+  },
+  "timings": {
+    "minDisplay": 800,
+    "autoReturn": {
+      "dizzy": 6000,
+      "happy": 4000
+    }
+  },
+  "eyeTracking": {
+    "enabled": true,
+    "states": [
+      "idle",
+      "mini-idle"
+    ],
+    "eyeRatioX": 0.489,
+    "eyeRatioY": 0.756,
+    "maxOffset": 3,
+    "bodyScale": 0.33,
+    "shadowStretch": 0.15,
+    "shadowShift": 0.3,
+    "ids": {
+      "eyes": "eyes-js",
+      "body": "body-js",
+      "shadow": "shadow-js"
+    }
+  }
+}
